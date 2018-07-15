@@ -1,0 +1,13 @@
+<mat-list>
+  <mat-list-item *ngFor="let card of list | async">
+    <button mat-icon-button color="warn" (click)="onDelete($event,card)">
+      <mat-icon mat-list-icon>delete</mat-icon>
+    </button>
+    <h4 mat-line (click)="onClicked(card)" [innerHTML]="card.question"></h4>
+    <mat-divider></mat-divider>
+  </mat-list-item>
+
+</mat-list>
+<button [routerLink]="['/add']" class="fab" mat-fab>
+  <mat-icon>add</mat-icon>
+</button>

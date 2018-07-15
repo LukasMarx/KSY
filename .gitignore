@@ -16,6 +16,9 @@
 *.launch
 .settings/
 *.sublime-workspace
+questions.json
+input.txt
+ksycards-9e0c907eb027.json
 
 # IDE - VSCode
 .vscode/*

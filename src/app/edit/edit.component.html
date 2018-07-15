@@ -1,0 +1,9 @@
+<mat-card class="card">
+  <quill-editor *ngIf="card" format="html" [modules]="quillModules" [(ngModel)]="card.question"></quill-editor>
+</mat-card>
+<mat-card class="card">
+  <quill-editor *ngIf="card" format="html" [modules]="quillModules" [(ngModel)]="card.answer"></quill-editor>
+</mat-card>
+<button (click)="onSave()" class="fab" mat-fab>
+  <mat-icon>save</mat-icon>
+</button>

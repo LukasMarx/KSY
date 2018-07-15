@@ -1,0 +1,9 @@
+.card {
+  margin: 8px;
+}
+
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  public opened = false;
+
+  constructor(private router: Router) {}
+
+  navigateOverview() {
+    this.router.navigate(['/list']);
+    this.opened = false;
+  }
+
+  navigateQuiz() {
+    this.router.navigate(['/quiz']);
+    this.opened = false;
+  }
+
+  navigateSettings() {
+    this.router.navigate(['/list']);
+    this.opened = false;
+  }
 }

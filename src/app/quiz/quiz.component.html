@@ -1,0 +1,9 @@
+<mat-card class="card" *ngIf="cards">
+  <pre [innerHTML]="this.cards[this.randomIndex].question"></pre>
+</mat-card>
+<mat-card class="card" *ngIf="cards && showAnswer">
+  <pre [innerHTML]="this.cards[this.randomIndex].answer"></pre>
+</mat-card>
+<button *ngIf="cards" [routerLink]="['/edit/'+ this.cards[this.randomIndex].id]" class="fab" mat-fab>
+  <mat-icon>edit</mat-icon>
+</button>
