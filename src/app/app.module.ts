@@ -21,9 +21,10 @@ import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { IsEmptyPipe } from './isEmpty.pipe';
 
 @NgModule({
-  declarations: [AppComponent, EditComponent, QuizComponent, AddComponent, ListComponent, DialogComponent],
+  declarations: [AppComponent, EditComponent, QuizComponent, AddComponent, ListComponent, DialogComponent, IsEmptyPipe],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

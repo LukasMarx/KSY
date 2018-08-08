@@ -1,5 +1,5 @@
 <mat-list>
-  <mat-list-item *ngFor="let card of list | async">
+  <mat-list-item *ngFor="let card of list | async" [ngClass]="{'marked': card.answer | isEmpty}" style="overflow: hidden;">
     <button mat-icon-button color="warn" (click)="onDelete($event,card)">
       <mat-icon mat-list-icon>delete</mat-icon>
     </button>
